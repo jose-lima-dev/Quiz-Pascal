@@ -1,0 +1,1721 @@
+program quiz;
+uses crt;
+
+Var
+A, B, C, D, n, Pergunta, Resposta: String;
+s, ok: char;
+X, Opcao: Integer;
+label Inicio, Menu;
+
+
+Procedure Matematica;   // Matemática
+Label Inicio;
+
+
+Begin
+  Textcolor ( brown );
+  Repeat
+    Inicio:
+    clrscr;
+    Writeln('1) Quanto é 8x12?');  {Questão 1}
+    writeln(' ');
+    Writeln('(A) 96. ');
+    Writeln('(B) 102.');
+    Writeln('(C) 87. ');
+    Writeln('(D) 64. ');
+    Writeln ('  ');
+    writeln('1. A');
+    writeln('2. B');
+    writeln('3. C');
+    writeln('4. D');
+    writeln('  ');
+    Write('Digite a sua resposta: ');
+    Readln (X);
+    Writeln('  ');
+    Case X Of
+      1 : Writeln ('Correto');
+      2 : Writeln ('Errado');
+      3 : Writeln ('Errado');
+      4 : Writeln ('Errado');
+    End;
+    
+    Writeln('  ');
+    Write('Deseja continuar? ');
+    readln(s);
+    
+  Until ((s='S') or (s='s'));
+  
+  Repeat                                        //inicio do repeat ou loop
+    clrscr;
+    Writeln('2) Quanto é 12x12?'); {Questão 2}
+    writeln(' ');
+    Writeln('(A) 52. ');
+    Writeln('(B) 144. ');
+    Writeln('(C) 265.');
+    Writeln('(D) 123.');
+    Writeln ('  ');
+    writeln('1. A');
+    writeln('2. B');
+    writeln('3. C');
+    writeln('4. D');
+    writeln('  ');
+    Write('Digite a sua resposta: ');
+    Readln (X);
+    Writeln('  ');
+    Case X Of
+      1 : Writeln ('Errado');
+      2 : Writeln ('Correto');
+      3 : Writeln ('Errado');
+      4 : Writeln ('Errado');
+    End;
+    
+    Writeln('  ');
+    Write('Deseja continuar? ');
+    read(s);
+  Until ((s='S') or (s='s'));   //fim do repeat
+    
+    Writeln ('  ');
+    
+    Repeat
+      clrscr;
+      Writeln('3) Quanto é 12x15?'); {Questão 3}
+      writeln(' ');
+      Writeln('(A) 52. ');
+      Writeln('(B) 180. ');
+      Writeln('(C) 265.');
+      Writeln('(D) 123.');
+      Writeln ('  ');
+      writeln('1. A');
+      writeln('2. B');
+      writeln('3. C');
+      writeln('4. D');
+      writeln('  ');
+      Write('Digite a sua resposta: ');
+      Readln (X);
+      Writeln('  ');
+      Case X Of
+        1 : Writeln ('Errado');
+        2 : Writeln ('Correto');
+        3 : Writeln ('Errado');
+        4 : Writeln ('Errado');
+      End;
+      
+      Writeln('  ');
+      Write('Deseja continuar? ');
+      read(s);
+    Until ((s='S') or (s='s')); // fim do repeat
+      writeln(' ');
+      
+      Repeat
+        clrscr;
+        Writeln('4) Quanto é 9x22?'); {Questão 4}
+        writeln(' ');
+        Writeln('(A) 198. ');
+        Writeln('(B) 91. ');
+        Writeln('(C) 223.');
+        Writeln('(D) 132.');
+        Writeln ('  ');
+        writeln('1. A');
+        writeln('2. B');
+        writeln('3. C');
+        writeln('4. D');
+        writeln('  ');
+        Write('Digite a sua resposta: ');
+        Readln (X);
+        Writeln('  ');
+        Case X Of
+          1 : Writeln ('Correto');
+          2 : Writeln ('Errado');
+          3 : Writeln ('Errado');
+          4 : Writeln ('Errado');
+        End;
+        
+        writeln('  ');
+        Write('Deseja continuar? ');
+        read(s);
+      Until ((s='S') or (s='s')); // fim do repeat
+        writeln(' ');
+        
+        Repeat
+          clrscr;
+          Writeln('5) Quanto é 13x18?'); {Questão 5}
+          writeln(' ');
+          Writeln('(A) 278. ');
+          Writeln('(B) 240. ');
+          Writeln('(C) 234.');
+          Writeln('(D) 221.');
+          Writeln ('  ');
+          writeln('1. A');
+          writeln('2. B');
+          writeln('3. C');
+          writeln('4. D');
+          writeln('  ');
+          Write('Digite a sua resposta: ');
+          Readln (X);
+          Writeln('  ');
+          Case X Of
+            1 : Writeln ('Errado');
+            2 : Writeln ('Errado');
+            3 : Writeln ('Correto');
+            4 : Writeln ('Errado');
+          End;
+          
+          writeln(' ');
+          
+          Write('Deseja continuar? ');
+          read(s);
+        Until ((s='S') or (s='s')); // fim do repeat
+          writeln(' ');
+          
+          Repeat
+            clrscr;
+            Writeln('6) Quanto é 12x19?'); {Questão 6}
+            writeln(' ');
+            Writeln('(A) 228. ');
+            Writeln('(B) 119. ');
+            Writeln('(C) 220.');
+            Writeln('(D) 178.');
+            writeln('  ');
+            writeln('1. A');
+            writeln('2. B');
+            writeln('3. C');
+            writeln('4. D');
+            writeln('  ');
+            Write('Digite a sua resposta: ');
+            Readln (X);
+            Writeln('  ');
+            Case X Of
+              1 : Writeln ('Correto');
+              2 : Writeln ('Errado');
+              3 : Writeln ('Errado');
+              4 : Writeln ('Errado');
+            End;
+            
+            writeln(' ');
+            
+            Write('Deseja continuar? ');
+            read(s);
+          Until ((s='S') or (s='s')); // fim do repeat
+            writeln(' ');
+            
+            Repeat
+              clrscr;
+              Writeln('7) Quanto é 27x13?'); {Questão 7}
+              writeln(' ');
+              Writeln('(A) 123.');
+              Writeln('(B) 432.');
+              Writeln('(C) 397.');
+              Writeln('(D) 351.');
+              writeln('  ');
+              writeln('1. A');
+              writeln('2. B');
+              writeln('3. C');
+              writeln('4. D');
+              writeln('  ');
+              Write('Digite a sua resposta: ');
+              Readln (X);
+              Writeln('  ');
+              Case X Of
+                1 : Writeln ('Errado');
+                2 : Writeln ('Errado');
+                3 : Writeln ('Errado');
+                4 : Writeln ('Correto');
+              End;
+              
+              writeln(' ');
+              
+              Write('Deseja continuar? ');
+              read(s);
+            Until ((s='S') or (s='s')); // fim do repeat
+              writeln(' ');
+              
+              Repeat
+                clrscr;
+                Writeln('8) Quanto é 40x29'); {Questão 8}
+                writeln(' ');
+                Writeln('(A) 1161.');
+                Writeln('(B) 1160.');
+                Writeln('(C) 1050.');
+                Writeln('(D) 988.');
+                writeln('  ');
+                writeln('1. A');
+                writeln('2. B');
+                writeln('3. C');
+                writeln('4. D');
+                writeln('  ');
+                Write('Digite a sua resposta: ');
+                Readln (X);
+                Writeln('  ');
+                Case X Of
+                  1 : Writeln ('Errado');
+                  2 : Writeln ('Correto');
+                  3 : Writeln ('Errado');
+                  4 : Writeln ('Errado');
+                End;
+                
+                writeln(' ');
+                
+                Write('Deseja continuar? ');
+                read(s);
+              Until ((s='S') or (s='s')); // fim do repeat
+                writeln(' ');
+                
+                Repeat
+                  clrscr;
+                  Writeln('9) Quanto é 33x12'); {Questão 9}
+                  writeln(' ');
+                  Writeln('(A) 320.');
+                  Writeln('(B) 410.');
+                  Writeln('(C) 396.');
+                  Writeln('(D) 388.');
+                  writeln('  ');
+                  writeln('1. A');
+                  writeln('2. B');
+                  writeln('3. C');
+                  writeln('4. D');
+                  writeln('  ');
+                  Write('Digite a sua resposta: ');
+                  Readln (X);
+                  Writeln('  ');
+                  Case X Of
+                    1 : Writeln ('Errado');
+                    2 : Writeln ('Errado');
+                    3 : Writeln ('Correto');
+                    4 : Writeln ('Errado');
+                  End;
+                  
+                  writeln(' ');
+                  
+                  Write('Deseja continuar? ');
+                  read(s);
+                Until ((s='S') or (s='s')); // fim do repeat
+                  writeln(' ');
+                  
+                  Repeat
+                    clrscr;
+                    Writeln('10) Quanto é 21x39'); {Questão 10}
+                    writeln(' ');
+                    Writeln('(A) 819.');
+                    Writeln('(B) 820.');
+                    Writeln('(C) 782.');
+                    Writeln('(D) 910.');
+                    writeln('  ');
+                    writeln('1. A');
+                    writeln('2. B');
+                    writeln('3. C');
+                    writeln('4. D');
+                    writeln('  ');
+                    Write('Digite a sua resposta: ');
+                    Readln (X);
+                    Writeln('  ');
+                    Case X Of
+                      1 : Writeln ('Correto');
+                      2 : Writeln ('Errado');
+                      3 : Writeln ('Errado');
+                      4 : Writeln ('Errado');
+                    End;
+                    
+                    Clrscr;
+                    Writeln('Materia finalizada. ');
+                    Writeln('  ');
+                    Writeln ('1 - Inicio');
+                    Writeln ('2 - Sair. ');
+                    Writeln('  ');
+                    Write ('Escolha: ');
+                    Read (x);
+                    If (x) = 1 then
+                    Begin
+                      goto Inicio;
+                    End
+                    Else
+                    Begin
+                      Exit;
+                    End;
+                    
+                    
+                  Until ((s='S') or (s='s')); // fim do repeat
+                  End;
+                  
+                  
+                  Procedure Fisica;        // Fisica
+                  Label Inicio;
+                  
+                  
+                  Begin
+                    Textcolor ( blue );
+                    Repeat
+                      Inicio:
+                      clrscr;
+                      Writeln('1) Qual é a velocidade escalar média, em km/h, de uma pessoa que percorre a pé 1200 m em 20 min?');  {Questão 1}
+                      writeln(' ');
+                      Writeln('(A) 4,8. ');
+                      Writeln('(B) 3,6.');
+                      Writeln('(C) 2,7. ');
+                      Writeln('(D) 2,1. ');
+                      Writeln ('  ');
+                      writeln('1. A');
+                      writeln('2. B');
+                      writeln('3. C');
+                      writeln('4. D');
+                      writeln('  ');
+                      Write('Digite a sua resposta: ');
+                      Readln (X);
+                      Writeln('  ');
+                      Case X Of
+                        1 : Writeln ('Errado');
+                        2 : Writeln ('Correto');
+                        3 : Writeln ('Errado');
+                        4 : Writeln ('Errado');
+                      End;
+                      
+                      Writeln('  ');
+                      Write('Deseja continuar? ');
+                      readln(s);
+                      
+                    Until ((s='S') or (s='s'));
+                    
+                    Repeat                                        //inicio do repeat ou loop
+                      clrscr;
+                    Writeln('2) Alonso decidiu passear pelas cidades próximas da região onde mora. Para conhecer os locais, ele gastou 2 horas percorrendo uma distância de 120 km. Que velocidade Alonso estava em seu passeio?'); {Questão 2}
+                    writeln(' ');
+                    Writeln('(A) 70 km/h. ');
+                    Writeln('(B) 80 km/h. ');
+                    Writeln('(C) 60 km/h.');
+                    Writeln('(D) 90 km/h.');
+                    Writeln ('  ');
+                    writeln('1. A');
+                    writeln('2. B');
+                    writeln('3. C');
+                    writeln('4. D');
+                    writeln('  ');
+                    Write('Digite a sua resposta: ');
+                    Readln (X);
+                    Writeln('  ');
+                    Case X Of
+                      1 : Writeln ('Errado');
+                      2 : Writeln ('Errado');
+                      3 : Writeln ('Correto');
+                      4 : Writeln ('Errado');
+                    End;
+                    
+                    Writeln('  ');
+                    Write('Deseja continuar? ');
+                    read(s);
+                  Until ((s='S') or (s='s'));   //fim do repeat
+                    
+                    Writeln ('  ');
+                    
+                    Repeat
+                      clrscr;
+                    Writeln('3) Uma pessoa, correndo, percorre 4,0 km com velocidade escalar média de 12 km/h. O tempo do percurso é de: '); {Questão 3}
+                    writeln(' ');
+                    Writeln('(A) 3,0 min. ');
+                    Writeln('(B) 8,0 min. ');
+                    Writeln('(C) 20 min. ');
+                    Writeln('(D) 30 min. ');
+                    Writeln ('  ');
+                    writeln('1. A');
+                    writeln('2. B');
+                    writeln('3. C');
+                    writeln('4. D');
+                    writeln('  ');
+                    Write('Digite a sua resposta: ');
+                    Readln (X);
+                    Writeln('  ');
+                    Case X Of
+                      1 : Writeln ('Errado');
+                      2 : Writeln ('Errado');
+                      3 : Writeln ('Correto');
+                      4 : Writeln ('Errado');
+                    End;
+                    
+                    Writeln('  ');
+                    Write('Deseja continuar? ');
+                    read(s);
+                  Until ((s='S') or (s='s')); // fim do repeat
+                    writeln(' ');
+                    
+                    Repeat
+                      clrscr;
+                      Writeln('4) Laura estava passeando no parque com uma velocidade de 10 m/s em sua bicicleta. Realizando a conversão de unidades, qual seria essa velocidade se expressássemos em quilômetros por hora? '); {Questão 4}
+                      writeln(' ');
+                      Writeln('(A) 12 km/h. ');
+                      Writeln('(B) 10 km/h. ');
+                      Writeln('(C) 24 km/h. ');
+                      Writeln('(D) 36 km/h. ');
+                      Writeln ('  ');
+                      writeln('1. A');
+                      writeln('2. B');
+                      writeln('3. C');
+                      writeln('4. D');
+                      writeln('  ');
+                      Write('Digite a sua resposta: ');
+                      Readln (X);
+                      Writeln('  ');
+                      Case X Of
+                        1 : Writeln ('Errado');
+                        2 : Writeln ('Errado');
+                        3 : Writeln ('Errado');
+                        4 : Writeln ('Correto');
+                      End;
+                      
+                      writeln('  ');
+                      Write('Deseja continuar? ');
+                      read(s);
+                    Until ((s='S') or (s='s')); // fim do repeat
+                      writeln(' ');
+                      
+                      Repeat
+                        clrscr;
+                        Writeln('5) Um carro mantém uma velocidade escalar constante de 72,0 km/h. Em uma hora e dez minutos ele percorre, em quilômetros, a distância de: '); {Questão 5}
+                        writeln(' ');
+                        Writeln('(A) 79,2. ');
+                        Writeln('(B) 80,0. ');
+                        Writeln('(C) 82,4. ');
+                        Writeln('(D) 84,0. ');
+                        Writeln ('  ');
+                        writeln('1. A');
+                        writeln('2. B');
+                        writeln('3. C');
+                        writeln('4. D');
+                        writeln('  ');
+                        Write('Digite a sua resposta: ');
+                        Readln (X);
+                        Writeln('  ');
+                        Case X Of
+                          1 : Writeln ('Errado');
+                          2 : Writeln ('Errado');
+                          3 : Writeln ('Errado');
+                          4 : Writeln ('Correto');
+                        End;
+                        
+                        writeln(' ');
+                        
+                        Write('Deseja continuar? ');
+                        read(s);
+                      Until ((s='S') or (s='s')); // fim do repeat
+                        writeln(' ');
+                        
+                        Repeat
+                          clrscr;
+                          Writeln('6) Partindo do instante zero, um veículo sai da posição inicial de 60 metros e chega à posição final de 10 metros após 5 segundos. Qual a velocidade escalar média do veículo para efetuar esse percurso? '); {Questão 6}
+                          writeln(' ');
+                          Writeln('(A) 10 m/s. ');
+                          Writeln('(B) – 10 m/s. ');
+                          Writeln('(C) 14 m/s. ');
+                          Writeln('(D) Nula. ');
+                          writeln('  ');
+                          writeln('1. A');
+                          writeln('2. B');
+                          writeln('3. C');
+                          writeln('4. D');
+                          writeln('  ');
+                          Write('Digite a sua resposta: ');
+                          Readln (X);
+                          Writeln('  ');
+                          Case X Of
+                            1 : Writeln ('Errado');
+                            2 : Writeln ('Correto');
+                            3 : Writeln ('Errado');
+                            4 : Writeln ('Errado');
+                          End;
+                          
+                          writeln(' ');
+                          
+                          Write('Deseja continuar? ');
+                          read(s);
+                        Until ((s='S') or (s='s')); // fim do repeat
+                          writeln(' ');
+                          
+                          Repeat
+                            clrscr;
+                            Writeln('7) Um pequeno animal desloca-se com velocidade média igual a 0,5 m/s. A velocidade desse animal em km/dia é: '); {Questão 7}
+                            writeln(' ');
+                            Writeln('(A) 13,8. ');
+                            Writeln('(B) 48,3. ');
+                            Writeln('(C) 43,2. ');
+                            Writeln('(D) 4,30. ');
+                            writeln('  ');
+                            writeln('1. A');
+                            writeln('2. B');
+                            writeln('3. C');
+                            writeln('4. D');
+                            writeln('  ');
+                            Write('Digite a sua resposta: ');
+                            Readln (X);
+                            Writeln('  ');
+                            Case X Of
+                              1 : Writeln ('Errado');
+                              2 : Writeln ('Errado');
+                              3 : Writeln ('Correto');
+                              4 : Writeln ('Errado');
+                            End;
+                            
+                            writeln(' ');
+                            
+                            Write('Deseja continuar? ');
+                            read(s);
+                          Until ((s='S') or (s='s')); // fim do repeat
+                            writeln(' ');
+                            
+                            Repeat
+                              clrscr;
+                              Writeln('8) Numa corrida de fórmula 1 a volta mais rápida foi feita em 1 min e 20 s a uma velocidade média de 180 km/h. Pode-se afirmar que o comprimento da pista, em metros, é de? '); {Questão 8}
+                              writeln(' ');
+                              Writeln('(A) 180. ');
+                              Writeln('(B) 4000. ');
+                              Writeln('(C) 1800. ');
+                              Writeln('(D) 14400. ');
+                              writeln('  ');
+                              writeln('1. A');
+                              writeln('2. B');
+                              writeln('3. C');
+                              writeln('4. D');
+                              writeln('  ');
+                              Write('Digite a sua resposta: ');
+                              Readln (X);
+                              Writeln('  ');
+                              Case X Of
+                                1 : Writeln ('Errado');
+                                2 : Writeln ('Correto');
+                                3 : Writeln ('Errado');
+                                4 : Writeln ('Errado');
+                              End;
+                              
+                              writeln(' ');
+                              
+                              Write('Deseja continuar? ');
+                              read(s);
+                            Until ((s='S') or (s='s')); // fim do repeat
+                              writeln(' ');
+                              
+                              Repeat
+                                clrscr;
+                              Writeln('9) Um elevador movimenta-se no sentido ascendente e percorre 40 m em 20 s. Em seguida, ele volta a posição inicial levando o mesmo tempo. A velocidade escalar média do elevador durante todo o trajeto vale: '); {Questão 9}
+                              writeln(' ');
+                              Writeln('(A) 0 m/s. ');
+                              Writeln('(B) 2 m/s. ');
+                              Writeln('(C) 3 m/s. ');
+                              Writeln('(D) 8 m/s. ');
+                              writeln('  ');
+                              writeln('1. A');
+                              writeln('2. B');
+                              writeln('3. C');
+                              writeln('4. D');
+                              writeln('  ');
+                              Write('Digite a sua resposta: ');
+                              Readln (X);
+                              Writeln('  ');
+                              Case X Of
+                                1 : Writeln ('Correto');
+                                2 : Writeln ('Errado');
+                                3 : Writeln ('Errado');
+                                4 : Writeln ('Errado');
+                              End;
+                              
+                              writeln(' ');
+                              
+                              Write('Deseja continuar? ');
+                              read(s);
+                            Until ((s='S') or (s='s')); // fim do repeat
+                              writeln(' ');
+                              
+                              Repeat
+                                clrscr;
+                                Writeln('10) Em sua trajetória, um ônibus interestadual percorreu 60 km em 80 min, após 10 min de parada, seguiu viagem por mais 90 km à velocidade média de 60 km/h e, por fim, após 13 min de parada, percorreu mais 42 km em 30 min. '); {Questão 10}
+                                writeln('A afirmativa verdadeira sobre o movimento do ônibus, do início ao final da viagem, é que ele: )');
+                                writeln(' ');
+                                Writeln('(A) Percorreu uma distância total de 160 km. ');
+                                Writeln('(B) Gastou um tempo total igual ao triplo do tempo gasto no primeiro trecho de viagem. ');
+                                Writeln('(C) Desenvolveu uma velocidade média de 60,2 km/h. ');
+                                Writeln('(D) Teria desenvolvido uma velocidade média de 57,6 km/h, se não tivesse feito paradas. ');
+                                writeln('  ');
+                                writeln('1. A');
+                                writeln('2. B');
+                                writeln('3. C');
+                                writeln('4. D');
+                                writeln('  ');
+                                Write('Digite a sua resposta: ');
+                                Readln (X);
+                                Writeln('  ');
+                                Case X Of
+                                  1 : Writeln ('Errado');
+                                  2 : Writeln ('Errado');
+                                  3 : Writeln ('Errado');
+                                  4 : Writeln ('Correto');
+                                End;
+                                
+                                clrscr;
+                                Writeln('Materia finalizada. ');
+                                Writeln('  ');
+                                Writeln ('1 - Inicio');
+                                Writeln ('2 - Sair. ');
+                                Writeln('  ');
+                                Write ('Escolha: ');
+                                Read (x);
+                                If (x) = 1 then
+                                Begin
+                                  goto Inicio;
+                                End
+                                Else
+                                Begin
+                                  Exit;
+                                End;
+                                
+                                
+                              Until ((s='S') or (s='s')); // fim do repeat
+                              End;
+                              
+                              Procedure Quimica;        // Quimica
+                              Label Inicio;
+                              
+                              
+                              Begin
+                                Textcolor ( green );
+                                Repeat
+                                  Inicio:
+                                  clrscr;
+                                  Writeln('1) Qual cientista propôs o primeiro modelo atômico moderno que ficou conhecido como “bola de bilhar”? ');  {Questão 1}
+                                  writeln(' ');
+                                  Writeln('(A) Isaac Newton. ');
+                                  Writeln('(B) Demócrito. ');
+                                  Writeln('(C) John Dalton. ');
+                                  Writeln('(D) Ernest Rutherford. ');
+                                  Writeln ('  ');
+                                  writeln('1. A');
+                                  writeln('2. B');
+                                  writeln('3. C');
+                                  writeln('4. D');
+                                  writeln('  ');
+                                  Write('Digite a sua resposta: ');
+                                  Readln (X);
+                                  Writeln('  ');
+                                  Case X Of
+                                    1 : Writeln ('Errado');
+                                    2 : Writeln ('Errado');
+                                    3 : Writeln ('Correto');
+                                    4 : Writeln ('Errado');
+                                  End;
+                                  
+                                  Writeln('  ');
+                                  Write('Deseja continuar? ');
+                                  readln(s);
+                                  
+                                Until ((s='S') or (s='s'));
+                                
+                                Repeat                                        //inicio do repeat ou loop
+                                  clrscr;
+                                  Writeln('2) Assinale a alternativa incorreta: '); {Questão 2}
+                                  writeln(' ');
+                                  Writeln('(A) As primeiras ideias relativas à estrutura interna dos átomos foram de Thomson. ');
+                                  Writeln('(B) No modelo atômico de Rutherford-Bohr, os elétrons que giram ao redor do núcleo não giram ao acaso, mas descrevem órbitas determinadas. ');
+                                  Writeln('(C) O modelo atômico de Dalton considerava a existência de cargas nos átomos. ');
+                                  Writeln('(D) Demócrito e Leucipo foram os primeiros a definir o conceito de matéria e átomo. ');
+                                  Writeln ('  ');
+                                  writeln('1. A');
+                                  writeln('2. B');
+                                  writeln('3. C');
+                                  writeln('4. D');
+                                  writeln('  ');
+                                  Write('Digite a sua resposta: ');
+                                  Readln (X);
+                                  Writeln('  ');
+                                  Case X Of
+                                    1 : Writeln ('Errado');
+                                    2 : Writeln ('Errado');
+                                    3 : Writeln ('Correto');
+                                    4 : Writeln ('Errado');
+                                  End;
+                                  
+                                  Writeln('  ');
+                                  Write('Deseja continuar? ');
+                                  read(s);
+                                Until ((s='S') or (s='s'));   //fim do repeat
+                                  
+                                  Writeln ('  ');
+                                  
+                                  Repeat
+                                    clrscr;
+                                    Writeln('3) Sobre o modelo Rutherford, considere as afirmações abaixo como verdadeiras ou falsas: '); {Questão 3}
+                                    writeln(' ');
+                                    Writeln('(A) O Modelo Atômico de Rutherford sugere que o átomo apresenta o aspecto de um sistema planetário. ');
+                                    Writeln('(B) O Modelo Atômico de Rutherford ficou conhecido como “modelo pudim de ameixa” ou “pudim com passas” em decorrência do seu aspecto. ');
+                                    Writeln('(C) No Modelo Atômico de Rutherford, os elétrons giram em torno do núcleo (formado por prótons e nêutrons), de forma semelhante aos planetas que giram à volta do Sol.');
+                                    Writeln('(D) O Modelo Atômico de Rutherford é também chamado de “Modelo Atômico de Rutherford-Bohr”. ');
+                                    Writeln ('  ');
+                                    writeln('1. V,F,V,F ');
+                                    writeln('2. V,F,F,V ');
+                                    writeln('3. F,V,F,V ');
+                                    writeln('4. F,F,V,V');
+                                    writeln('  ');
+                                    Write('Digite a sua resposta: ');
+                                    Readln (X);
+                                    Writeln('  ');
+                                    Case X Of
+                                      1 : Writeln ('Correto');
+                                      2 : Writeln ('Errado');
+                                      3 : Writeln ('Errado');
+                                      4 : Writeln ('Errado');
+                                    End;
+                                    
+                                    Writeln('  ');
+                                    Write('Deseja continuar? ');
+                                    read(s);
+                                  Until ((s='S') or (s='s')); // fim do repeat
+                                    writeln(' ');
+                                    
+                                    Repeat
+                                      clrscr;
+                                      Writeln('4) Os modelos atômicos descrevem alguns aspectos estruturais dos átomos. Sobre essa afirmação podemos afirmar que: '); {Questão 4}
+                                      writeln(' ');
+                                      Writeln('(A) Os modelos atômicos foram desenvolvidos pelos cientistas gregos Leucipo e Demócrito. ');
+                                      Writeln('(B) Os principais modelos atômicos são: Modelo de Rutherford e o Modelo de Rutherford-Bohr. ');
+                                      Writeln('(C) O primeiro modelo atômico desenvolvido foi o Modelo Atômico de Rutherford. ');
+                                    Writeln('(D) Os modelos atômicos foram desenvolvidos por cientistas com o intuito de compreender melhor o átomo e a sua composição. ');
+                                    Writeln ('  ');
+                                    writeln('1. A');
+                                    writeln('2. B');
+                                    writeln('3. C');
+                                    writeln('4. D');
+                                    writeln('  ');
+                                    Write('Digite a sua resposta: ');
+                                    Readln (X);
+                                    Writeln('  ');
+                                    Case X Of
+                                      1 : Writeln ('Errado');
+                                      2 : Writeln ('Errado');
+                                      3 : Writeln ('Errado');
+                                      4 : Writeln ('Correto');
+                                    End;
+                                    
+                                    writeln('  ');
+                                    Write('Deseja continuar? ');
+                                    read(s);
+                                  Until ((s='S') or (s='s')); // fim do repeat
+                                    writeln(' ');
+                                    
+                                    Repeat
+                                      clrscr;
+                                      Writeln('5) O átomo de Rutherford (1911) foi comparado ao sistema planetário (o núcleo atômico representa o sol e a eletrosfera, os planetas): '); {Questão 5}
+                                      writeln(' ');
+                                      Writeln('Eletrosfera é a região do átomo que: ');
+                                      Writeln(' ');
+                                      Writeln('(A) Contém as partículas de carga elétrica negativa. ');
+                                      Writeln('(B) Contém as partículas de carga elétrica positiva. ');
+                                      Writeln('(C) Contém nêutrons.');
+                                      Writeln('(D) Concentra praticamente toda a massa do átomo. ');
+                                      Writeln ('  ');
+                                      writeln('1. A');
+                                      writeln('2. B');
+                                      writeln('3. C');
+                                      writeln('4. D');
+                                      writeln('  ');
+                                      Write('Digite a sua resposta: ');
+                                      Readln (X);
+                                      Writeln('  ');
+                                      Case X Of
+                                        1 : Writeln ('Correto');
+                                        2 : Writeln ('Errado');
+                                        3 : Writeln ('Errado');
+                                        4 : Writeln ('Errado');
+                                      End;
+                                      
+                                      writeln(' ');
+                                      
+                                      Write('Deseja continuar? ');
+                                      read(s);
+                                    Until ((s='S') or (s='s')); // fim do repeat
+                                      writeln(' ');
+                                      
+                                      Repeat
+                                        clrscr;
+                                        Writeln('6) Abaixo são citadas quatro propriedades da matéria: '); {Questão 6}
+                                        writeln(' ');
+                                        Writeln('(A) I. Densidade. ');
+                                        Writeln('(B) II. Volume. ');
+                                        Writeln('(C) III. Temperatura de ebulição. ');
+                                        Writeln('(D) IV. Massa. ');
+                                        writeln('  ');
+                                        writeln('1. I e II. ');
+                                        writeln('2. I e III. ');
+                                        writeln('3. II e IV. ');
+                                        writeln('4. II e III. ');
+                                        writeln('  ');
+                                        Write('Digite a sua resposta: ');
+                                        Readln (X);
+                                        Writeln('  ');
+                                        Case X Of
+                                          1 : Writeln ('Errado');
+                                          2 : Writeln ('Errado');
+                                          3 : Writeln ('Correto');
+                                          4 : Writeln ('Errado');
+                                        End;
+                                        
+                                        writeln(' ');
+                                        
+                                        Write('Deseja continuar? ');
+                                        read(s);
+                                      Until ((s='S') or (s='s')); // fim do repeat
+                                        writeln(' ');
+                                        
+                                        Repeat
+                                          clrscr;
+                                        Writeln('7) Considera-se um sistema homogêneo ou heterogêneo qualquer porção do universo que seja submetida a uma observação, sendo que a mesma pode ser uma substância pura ou uma mistura. São exemplos de sistemas homogêneos e heterogêneos, respectivamente. '); {Questão 7}
+                                        writeln(' ');
+                                        Writeln('(A) Água potável e água com álcool etílico. ');
+                                        Writeln('(B) Água com gelo e água barrenta. ');
+                                        Writeln('(C) Água destilada com gelo e água potável com sal. ');
+                                        Writeln('(D) Água destilada e água com óleo de soja. ');
+                                        writeln('  ');
+                                        writeln('1. A');
+                                        writeln('2. B');
+                                        writeln('3. C');
+                                        writeln('4. D');
+                                        writeln('  ');
+                                        Write('Digite a sua resposta: ');
+                                        Readln (X);
+                                        Writeln('  ');
+                                        Case X Of
+                                          1 : Writeln ('Errado');
+                                          2 : Writeln ('Errado');
+                                          3 : Writeln ('Errado');
+                                          4 : Writeln ('Correto');
+                                        End;
+                                        
+                                        writeln(' ');
+                                        
+                                        Write('Deseja continuar? ');
+                                        read(s);
+                                      Until ((s='S') or (s='s')); // fim do repeat
+                                        writeln(' ');
+                                        
+                                        Repeat
+                                          clrscr;
+                                        Writeln('8) Sabe-se que energia é a medida da capacidade de realizar um trabalho e que ela pode ser de diversos tipos diferentes, dependendo do trabalho que foi realizado. '); {Questão 8}
+                                        writeln(' ');
+                                      writeln('Assim sendo, marque a alternativa na qual o tipo de energia não corresponde ao trabalho realizado: ');
+                                      writeln(' ');
+                                      Writeln('(A) Energia térmica: troca de calor entre o gelo e a água líquida em um copo. ');
+                                      Writeln('(B) Energia cinética: quando um corpo está em repouso. ');
+                                      Writeln('(C) Energia mecânica: capacidade de colocar um corpo em movimento. ');
+                                      Writeln('(D) Energia potencial: uma pedra sobre uma mesa. ');
+                                      writeln('  ');
+                                      writeln('1. A');
+                                      writeln('2. B');
+                                      writeln('3. C');
+                                      writeln('4. D');
+                                      writeln('  ');
+                                      Write('Digite a sua resposta: ');
+                                      Readln (X);
+                                      Writeln('  ');
+                                      Case X Of
+                                        1 : Writeln ('Errado');
+                                        2 : Writeln ('Correto');
+                                        3 : Writeln ('Errado');
+                                        4 : Writeln ('Errado');
+                                      End;
+                                      
+                                      writeln(' ');
+                                      
+                                      Write('Deseja continuar? ');
+                                      read(s);
+                                    Until ((s='S') or (s='s')); // fim do repeat
+                                      writeln(' ');
+                                      
+                                      Repeat
+                                        clrscr;
+                                        Writeln('9) Com relação à classificação periódica moderna dos elementos, identifique a afirmação verdadeira: '); {Questão 9}
+                                        writeln(' ');
+                                        Writeln('(A) Em uma família, os elementos apresentam geralmente o mesmo número de elétrons na última camada. ');
+                                        Writeln('(B) Na tabela periódica, os elementos químicos estão colocados em ordem decrescente de massas atômicas. ');
+                                        Writeln('(C) Na tabela periódica, os elementos químicos estão colocados em ordem decrescente de massas atômicas. ');
+                                        Writeln('(D) Em um período, os elementos apresentam propriedades químicas semelhantes.');
+                                        writeln('  ');
+                                        writeln('1. A');
+                                        writeln('2. B');
+                                        writeln('3. C');
+                                        writeln('4. D');
+                                        writeln('  ');
+                                        Write('Digite a sua resposta: ');
+                                        Readln (X);
+                                        Writeln('  ');
+                                        Case X Of
+                                          1 : Writeln ('Correto');
+                                          2 : Writeln ('Errado');
+                                          3 : Writeln ('Errado');
+                                          4 : Writeln ('Errado');
+                                        End;
+                                        
+                                        writeln(' ');
+                                        
+                                        Write('Deseja continuar? ');
+                                        read(s);
+                                      Until ((s='S') or (s='s')); // fim do repeat
+                                        writeln(' ');
+                                        
+                                        Repeat
+                                          clrscr;
+                                          Writeln('10) Considerando-se as propriedades dos elementos químicos e a tabela periódica, é incorreto afirmar: '); {Questão 10}
+                                          writeln(' ');
+                                          Writeln('(A) Um metal é uma substância que conduz a corrente elétrica, é dúctil e maleável. ');
+                                          Writeln('(B) Um não metal é uma substância que não conduz a corrente elétrica, não é dúctil nem maleável. ');
+                                          Writeln('(C) Um semimetal tem aparência física de um metal, mas tem comportamento químico semelhante ao de um não metal. ');
+                                          Writeln('(D) Um semimetal tem aparência física de um metal, mas tem comportamento químico semelhante ao de um não metal. ');
+                                          writeln('  ');
+                                          writeln('1. A');
+                                          writeln('2. B');
+                                          writeln('3. C');
+                                          writeln('4. D');
+                                          writeln('  ');
+                                          Write('Digite a sua resposta: ');
+                                          Readln (X);
+                                          Writeln('  ');
+                                          Case X Of
+                                            1 : Writeln ('Errado');
+                                            2 : Writeln ('Errado');
+                                            3 : Writeln ('Errado');
+                                            4 : Writeln ('Correto');
+                                          End;
+                                          
+                                          Writeln('Materia finalizada. ');
+                                          Writeln('  ');
+                                          Writeln ('1 - Inicio');
+                                          Writeln ('2 - Sair. ');
+                                          Writeln('  ');
+                                          Write ('Escolha: ');
+                                          Read (x);
+                                          If (x) = 1 then
+                                          Begin
+                                            goto Inicio;
+                                          End
+                                          Else
+                                          Begin
+                                            Exit;
+                                          End;
+                                          
+                                          
+                                        Until ((s='S') or (s='s')); // fim do repeat
+                                        End;
+                                        
+                                        Procedure Portugues;        // Portugues
+                                        Label Inicio;
+                                        
+                                        
+                                        Begin
+                                          Repeat
+                                            Inicio:
+                                            Textcolor (red);
+                                            clrscr;
+                                            Writeln('1) Indique as alternativas que apresentam a figura de linguagem personificação, também chamada de prosopopeia. ');  {Questão 1}
+                                            writeln(' ');
+                                            Writeln('(A) As pedras humilham. ');
+                                            Writeln('(B) Os confetes festejam.');
+                                            Writeln('(C) Os diários contam segredos. ');
+                                            Writeln('(D) Todas acima. ');
+                                            Writeln ('  ');
+                                            writeln('1. A');
+                                            writeln('2. B');
+                                            writeln('3. C');
+                                            writeln('4. D');
+                                            writeln('  ');
+                                            Write('Digite a sua resposta: ');
+                                            Readln (X);
+                                            Writeln('  ');
+                                            Case X Of
+                                              1 : Writeln ('Errado');
+                                              2 : Writeln ('Errado');
+                                              3 : Writeln ('Errado');
+                                              4 : Writeln ('Correto');
+                                            End;
+                                            
+                                            Writeln('  ');
+                                            Write('Deseja continuar? ');
+                                            readln(s);
+                                            
+                                          Until ((s='S') or (s='s'));
+                                          
+                                          Repeat                                        //inicio do repeat ou loop
+                                            clrscr;
+                                            Writeln('2) Indique a alternativa correta: '); {Questão 2}
+                                            writeln(' ');
+                                            Writeln('(A) Antítese e paradoxo são dois nomes para a mesma figura de linguagem, a que utiliza ideias contrárias. ');
+                                            Writeln('(B) Aliteração, paronomásia, assonância e onomatopeia são figuras de sintaxe. ');
+                                            Writeln('(C) Aliteração é a repetição de sons vocálicos. ');
+                                            Writeln('(D) Este é um exemplo de metonímia: “Parece que temos um Pavarotti”. ');
+                                            Writeln ('  ');
+                                            writeln('1. A');
+                                            writeln('2. B');
+                                            writeln('3. C');
+                                            writeln('4. D');
+                                            writeln('  ');
+                                            Write('Digite a sua resposta: ');
+                                            Readln (X);
+                                            Writeln('  ');
+                                            Case X Of
+                                              1 : Writeln ('Errado');
+                                              2 : Writeln ('Errado');
+                                              3 : Writeln ('Errado');
+                                              4 : Writeln ('Correto');
+                                            End;
+                                            
+                                            Writeln('  ');
+                                            Write('Deseja continuar? ');
+                                            read(s);
+                                          Until ((s='S') or (s='s'));   //fim do repeat
+                                            
+                                            Writeln ('  ');
+                                            
+                                            Repeat
+                                              clrscr;
+                                              Writeln('3) Qual das orações abaixo apresenta uma perífrase, também chamada de antonomásia? '); {Questão 3}
+                                              writeln(' ');
+                                              Writeln('(A) Saia já para fora! ');
+                                              Writeln('(B) Foi salvo pelo melhor amigo do homem. ');
+                                              Writeln('(C) “É o pau, é a pedra, é o fim do caminho” (Tom Jobim). ');
+                                              Writeln('(D) Escreveu, não leu; o pau comeu. ');
+                                              Writeln ('  ');
+                                              writeln('1. A');
+                                              writeln('2. B');
+                                              writeln('3. C');
+                                              writeln('4. D');
+                                              writeln('  ');
+                                              Write('Digite a sua resposta: ');
+                                              Readln (X);
+                                              Writeln('  ');
+                                              Case X Of
+                                                1 : Writeln ('Errado');
+                                                2 : Writeln ('Correto');
+                                                3 : Writeln ('Errado');
+                                                4 : Writeln ('Errado');
+                                              End;
+                                              
+                                              Writeln('  ');
+                                              Write('Deseja continuar? ');
+                                              read(s);
+                                            Until ((s='S') or (s='s')); // fim do repeat
+                                              writeln(' ');
+                                              
+                                              Repeat
+                                                clrscr;
+                                                Writeln('4) Quanto às figuras de linguagem, há neles, respectivamente: '); {Questão 4}
+                                                writeln(' ');
+                                                Writeln('(A) I. "À custa de muitos trabalhos, de muitas fadigas, e sobretudo de muita paciência...". ');
+                                                Writeln('(B) II. "... se se queria que estivesse sério, desatava a rir...". ');
+                                                Writeln('(C) III. "... parece que uma mola oculta o impelia...". ');
+                                                Writeln('(D) IV. "... e isto (...) dava em resultado a mais refinada má-criação que se pode imaginar.". ');
+                                                Writeln ('  ');
+                                                writeln('1. Gradação, antítese, comparação e hipérbole. ');
+                                                writeln('2. Hipérbole, paradoxo, metáfora e gradação. ');
+                                                writeln('3. Hipérbole, antítese, comparação e paradoxo. ');
+                                                writeln('4. Gradação, antítese, metáfora e hipérbole. ');
+                                                writeln('  ');
+                                                Write('Digite a sua resposta: ');
+                                                Readln (X);
+                                                Writeln('  ');
+                                                Case X Of
+                                                  1 : Writeln ('Errado');
+                                                  2 : Writeln ('Errado');
+                                                  3 : Writeln ('Errado');
+                                                  4 : Writeln ('Correto');
+                                                End;
+                                                
+                                                writeln('  ');
+                                                Write('Deseja continuar? ');
+                                                read(s);
+                                              Until ((s='S') or (s='s')); // fim do repeat
+                                                writeln(' ');
+                                                
+                                                Repeat
+                                                  clrscr;
+                                                  Writeln('5) A catacrese, figura que se observa na frase “Montou o cavalo no burro bravo”, ocorre em: '); {Questão 5}
+                                                  writeln(' ');
+                                                  Writeln('(A) Os tempos mudaram, no devagar depressa do tempo. ');
+                                                Writeln('(B) Última flor do Lácio, inculta e bela, és a um tempo esplendor e sepultura. ');
+                                                Writeln('(C) Apressadamente, todos embarcaram no trem.');
+                                                Writeln('(D) Ó mar salgado, quanto do teu sal são lágrimas de Portugal.');
+                                                Writeln ('  ');
+                                                writeln('1. A');
+                                                writeln('2. B');
+                                                writeln('3. C');
+                                                writeln('4. D');
+                                                writeln('  ');
+                                                Write('Digite a sua resposta: ');
+                                                Readln (X);
+                                                Writeln('  ');
+                                                Case X Of
+                                                  1 : Writeln ('Errado');
+                                                  2 : Writeln ('Errado');
+                                                  3 : Writeln ('Correto');
+                                                  4 : Writeln ('Errado');
+                                                End;
+                                                
+                                                writeln(' ');
+                                                
+                                                Write('Deseja continuar? ');
+                                                read(s);
+                                              Until ((s='S') or (s='s')); // fim do repeat
+                                                writeln(' ');
+                                                
+                                                Repeat
+                                                  clrscr;
+                                                  Writeln('6) Assinalar a alternativa correta, com relação às figuras de linguagem, presentes nos fragmentos a seguir: '); {Questão 6}
+                                                  writeln(' ');
+                                                  Writeln('(A) I. “Não te esqueças daquele amor ardente que já nos olhos meus tão puros viste.”. ');
+                                                  Writeln('(B) II. “A moral legisla para o homem; o direito, para o cidadão.”. ');
+                                                  Writeln('(C) III. “A maioria concordava nos pontos essenciais; nos pormenores porém, discordavam.”. ');
+                                                  Writeln('(D) IV. “Isaac a vinte passos, divisando a vulto de um, para, ergue a mão em viseira, firma os olhos.”. ');
+                                                  writeln('  ');
+                                                  writeln('1. Anacoluto, hipérbato, hipálage, pleonasmo. ');
+                                                  writeln('2. Hipérbato, zeugma, silepse, assíndeto. ');
+                                                  writeln('3. Anáfora, polissíndeto, elipse, hipérbato. ');
+                                                  writeln('4. Pleonasmo, anacoluto, catacrese, eufemismo. ');
+                                                  writeln('  ');
+                                                  Write('Digite a sua resposta: ');
+                                                  Readln (X);
+                                                  Writeln('  ');
+                                                  Case X Of
+                                                    1 : Writeln ('Errado');
+                                                    2 : Writeln ('Correto');
+                                                    3 : Writeln ('Errado');
+                                                    4 : Writeln ('Errado');
+                                                  End;
+                                                  
+                                                  writeln(' ');
+                                                  
+                                                  Write('Deseja continuar? ');
+                                                  read(s);
+                                                Until ((s='S') or (s='s')); // fim do repeat
+                                                  writeln(' ');
+                                                  
+                                                  Repeat
+                                                    clrscr;
+                                                    Writeln('7) Na frase: "O pessoal estão exagerando, me disse ontem um camelô", encontramos a figura de linguagem chamada: '); {Questão 7}
+                                                    writeln(' ');
+                                                    Writeln('(A) Silepse de pessoa. ');
+                                                    Writeln('(B) Elipse. ');
+                                                    Writeln('(C) Anacoluto. ');
+                                                    Writeln('(D) Silepse de número. ');
+                                                    writeln('  ');
+                                                    writeln('1. A');
+                                                    writeln('2. B');
+                                                    writeln('3. C');
+                                                    writeln('4. D');
+                                                    writeln('  ');
+                                                    Write('Digite a sua resposta: ');
+                                                    Readln (X);
+                                                    Writeln('  ');
+                                                    Case X Of
+                                                      1 : Writeln ('Errado');
+                                                      2 : Writeln ('Errado');
+                                                      3 : Writeln ('Errado');
+                                                      4 : Writeln ('Correto');
+                                                    End;
+                                                    
+                                                    writeln(' ');
+                                                    
+                                                    Write('Deseja continuar? ');
+                                                    read(s);
+                                                  Until ((s='S') or (s='s')); // fim do repeat
+                                                    writeln(' ');
+                                                    
+                                                    Repeat
+                                                      clrscr;
+                                                      Writeln('8) Cada frase abaixo possui uma figura de linguagem. Assinale aquela que não está classificada corretamente: '); {Questão 8}
+                                                      writeln(' ');
+                                                      Writeln('(A) O céu vai se tornando roxo e a cidade aos poucos agoniza. (prosopopeia). ');
+                                                      Writeln('(B) "E ele riu frouxamente um riso sem alegria". (pleonasmo). ');
+                                                      Writeln('(C) Peço-lhe mil desculpas pelo que aconteceu. (metáfora). ');
+                                                      Writeln('(D) "Toda vida se tece de mil mortes." (antítese). ');
+                                                      writeln('  ');
+                                                      writeln('1. A');
+                                                      writeln('2. B');
+                                                      writeln('3. C');
+                                                      writeln('4. D');
+                                                      writeln('  ');
+                                                      Write('Digite a sua resposta: ');
+                                                      Readln (X);
+                                                      Writeln('  ');
+                                                      Case X Of
+                                                        1 : Writeln ('Errado');
+                                                        2 : Writeln ('Errado');
+                                                        3 : Writeln ('Correto');
+                                                        4 : Writeln ('Errado');
+                                                      End;
+                                                      
+                                                      writeln(' ');
+                                                      
+                                                      Write('Deseja continuar? ');
+                                                      read(s);
+                                                    Until ((s='S') or (s='s')); // fim do repeat
+                                                      writeln(' ');
+                                                      
+                                                      Repeat
+                                                        clrscr;
+                                                        Writeln('9) No trecho: “…dão um jeito de mudar o mínimo para continuar mandando o máximo”, a figura de linguagem presente é chamada: '); {Questão 9}
+                                                        writeln(' ');
+                                                        Writeln('(A) Metáfora.');
+                                                        Writeln('(B) Hipérbole.');
+                                                        Writeln('(C) Antítese.');
+                                                        Writeln('(D) Anáfora.');
+                                                        writeln('  ');
+                                                        writeln('1. A');
+                                                        writeln('2. B');
+                                                        writeln('3. C');
+                                                        writeln('4. D');
+                                                        writeln('  ');
+                                                        Write('Digite a sua resposta: ');
+                                                        Readln (X);
+                                                        Writeln('  ');
+                                                        Case X Of
+                                                          1 : Writeln ('Errado');
+                                                          2 : Writeln ('Errado');
+                                                          3 : Writeln ('Correto');
+                                                          4 : Writeln ('Errado');
+                                                        End;
+                                                        
+                                                        writeln(' ');
+                                                        
+                                                        Write('Deseja continuar? ');
+                                                        read(s);
+                                                      Until ((s='S') or (s='s')); // fim do repeat
+                                                        writeln(' ');
+                                                        
+                                                        Repeat
+                                                          clrscr;
+                                                          Writeln('10) "Seus óculos eram imperiosos." Assinale a alternativa em que aparece a mesma figura de linguagem que há na frase acima: '); {Questão 10}
+                                                          writeln(' ');
+                                                          Writeln('(A) "As cidades vinham surgindo na ponte dos nomes." ');
+                                                          Writeln('(B) "Nasci na sala do 3° ano." ');
+                                                          Writeln('(C) "O bonde passa cheio de pernas." ');
+                                                          Writeln('(D) "O meu amor, paralisado, pula." ');
+                                                          writeln('  ');
+                                                          writeln('1. A');
+                                                          writeln('2. B');
+                                                          writeln('3. C');
+                                                          writeln('4. D');
+                                                          writeln('  ');
+                                                          Write('Digite a sua resposta: ');
+                                                          Readln (X);
+                                                          Writeln('  ');
+                                                          Case X Of
+                                                            1 : Writeln ('Errado');
+                                                            2 : Writeln ('Errado');
+                                                            3 : Writeln ('Correto');
+                                                            4 : Writeln ('Errado');
+                                                          End;
+                                                          
+                                                          Writeln('Materia finalizada. ');
+                                                          Writeln('  ');
+                                                          Writeln ('1 - Inicio');
+                                                          Writeln ('2 - Sair. ');
+                                                          Writeln('  ');
+                                                          Write ('Escolha: ');
+                                                          Read (x);
+                                                          If (x) = 1 then
+                                                          Begin
+                                                            goto Inicio;
+                                                          End
+                                                          Else
+                                                          Begin
+                                                            Exit;
+                                                          End;
+                                                          
+                                                          
+                                                        Until ((s='S') or (s='s')); // fim do repeat
+                                                        End;
+                                                        
+                                                        Procedure Historia;        // Historia
+                                                        Label Inicio;
+                                                        
+                                                        
+                                                        Begin
+                                                          textcolor ( yellow );
+                                                          Repeat
+                                                            Inicio:
+                                                            clrscr;
+                                                            Writeln('1) Em meados do século XVIII, James Watt patenteou na Inglaterra seu invento, sobre o qual escreveu a seu pai: ');  {Questão 1}
+                                                          Writeln('“O negócio a que me dedico agora se tornou um grande sucesso. A máquina de fogo que eu inventei está funcionando e obtendo uma resposta muito melhor do que qualquer outra que tenha sido inventada até agora”.');
+                                                          writeln('  ');
+                                                          writeln('A revolução histórica relacionada ao texto, a fonte primária de energia utilizada em tal máquina e a consequência ambiental de seu uso são, respectivamente: ');
+                                                          Writeln('  ');
+                                                          Writeln('(A) Puritana, gás natural e aumento na ocorrência de inversão térmica. ');
+                                                          Writeln('(B) Gloriosa, petróleo e destruição da camada de ozônio. ');
+                                                          Writeln('(C) Industrial, gás natural e redução da umidade atmosférica. ');
+                                                          Writeln('(D) Industrial, carvão mineral e aumento da poluição atmosférica. ');
+                                                          Writeln ('  ');
+                                                          writeln('1. A');
+                                                          writeln('2. B');
+                                                          writeln('3. C');
+                                                          writeln('4. D');
+                                                          writeln('  ');
+                                                          Write('Digite a sua resposta: ');
+                                                          Readln (X);
+                                                          Writeln('  ');
+                                                          Case X Of
+                                                            1 : Writeln ('Errado');
+                                                            2 : Writeln ('Errado');
+                                                            3 : Writeln ('Errado');
+                                                            4 : Writeln ('Correto');
+                                                          End;
+                                                          
+                                                          Writeln('  ');
+                                                          Write('Deseja continuar? ');
+                                                          readln(s);
+                                                          
+                                                        Until ((s='S') or (s='s'));
+                                                        
+                                                        Repeat                                        //inicio do repeat ou loop
+                                                          clrscr;
+                                                          Writeln('2) O acúmulo de capitais, a modernização da agricultura, a disponibilidade de mão de obra e de recursos naturais e a força do puritanismo ajudam a explicar o pioneirismo da __________ na Revolução Industrial. '); {Questão 2}
+                                                          writeln(' ');
+                                                          Writeln('Das opções abaixo listadas, o país que melhor preenche o espaço acima é: ');
+                                                          Writeln(' ');
+                                                          Writeln('(A) Alemanha. ');
+                                                          Writeln('(B) Holanda. ');
+                                                          Writeln('(C) Itália.');
+                                                          Writeln('(D) Inglaterra.');
+                                                          Writeln ('  ');
+                                                          writeln('1. A');
+                                                          writeln('2. B');
+                                                          writeln('3. C');
+                                                          writeln('4. D');
+                                                          writeln('  ');
+                                                          Write('Digite a sua resposta: ');
+                                                          Readln (X);
+                                                          Writeln('  ');
+                                                          Case X Of
+                                                            1 : Writeln ('Errado');
+                                                            2 : Writeln ('Errado');
+                                                            3 : Writeln ('Errado');
+                                                            4 : Writeln ('Correto');
+                                                          End;
+                                                          
+                                                          Writeln('  ');
+                                                          Write('Deseja continuar? ');
+                                                          read(s);
+                                                        Until ((s='S') or (s='s'));   //fim do repeat
+                                                          
+                                                          Writeln ('  ');
+                                                          
+                                                          Repeat
+                                                            clrscr;
+                                                            Writeln('3) Sobre a inovação tecnológica no sistema fabril na Inglaterra do século XVIII, é correto afirmar que ela: '); {Questão 3}
+                                                            writeln(' ');
+                                                            Writeln('(A) Foi adotada não somente para promover maior eficácia da produção, como também para realizar a dominação capitalista, à medida que as máquinas submeteram os trabalhadores a formas autoritárias de disciplina e a uma determinada hierarquia. ');
+                                                            Writeln('(B) Ocorreu graças ao investimento em pesquisa tecnológica de ponta, feito pelos industriais que participaram da Revolução Industrial. ');
+                                                            Writeln('(C) Nasceu do apoio dado pelo Estado à pesquisa nas universidades. ');
+                                                            Writeln('(D) Deu-se dentro das fábricas, cujos proprietários estimulavam os operários a desenvolver novas tecnologias. ');
+                                                            Writeln ('  ');
+                                                            writeln('1. A');
+                                                            writeln('2. B');
+                                                            writeln('3. C');
+                                                            writeln('4. D');
+                                                            writeln('  ');
+                                                            Write('Digite a sua resposta: ');
+                                                            Readln (X);
+                                                            Writeln('  ');
+                                                            Case X Of
+                                                              1 : Writeln ('Correto');
+                                                              2 : Writeln ('Errado');
+                                                              3 : Writeln ('Errado');
+                                                              4 : Writeln ('Errado');
+                                                            End;
+                                                            
+                                                            Writeln('  ');
+                                                            Write('Deseja continuar? ');
+                                                            read(s);
+                                                          Until ((s='S') or (s='s')); // fim do repeat
+                                                            writeln(' ');
+                                                            
+                                                            Repeat
+                                                              clrscr;
+                                                              Writeln('4) Dentre as consequências sociais forjadas pela Revolução Industrial pode-se mencionar: '); {Questão 4}
+                                                              writeln(' ');
+                                                            Writeln('(A) O desenvolvimento de uma camada social de trabalhadores, que destituídos dos meios de produção, passaram a sobreviver apenas da venda de sua força de trabalho. ');
+                                                            Writeln('(B) A melhoria das condições de habitação e sobrevivência para o operariado, proporcionada pelo surto de desenvolvimento econômico. ');
+                                                            Writeln('(C) A ascensão social dos artesãos que reuniram seus capitais e suas ferramentas em oficinas ou domicílios rurais dispersos, aumentando os núcleos domésticos de produção. ');
+                                                          Writeln('(D) O desenvolvimento de indústrias petroquímicas favorecendo a organização do mercado de trabalho, de maneira a assegurar emprego a todos os assalariados. ');
+                                                          Writeln ('  ');
+                                                          writeln('1. A');
+                                                          writeln('2. B');
+                                                          writeln('3. C');
+                                                          writeln('4. D');
+                                                          writeln('  ');
+                                                          Write('Digite a sua resposta: ');
+                                                          Readln (X);
+                                                          Writeln('  ');
+                                                          Case X Of
+                                                            1 : Writeln ('Correto');
+                                                            2 : Writeln ('Errado');
+                                                            3 : Writeln ('Errado');
+                                                            4 : Writeln ('Errado');
+                                                          End;
+                                                          
+                                                          writeln('  ');
+                                                          Write('Deseja continuar? ');
+                                                          read(s);
+                                                        Until ((s='S') or (s='s')); // fim do repeat
+                                                          writeln(' ');
+                                                          
+                                                          Repeat
+                                                            clrscr;
+                                                            Writeln('5) O novo processo de produção introduzido com a Revolução Industrial, no século XVIII, caracterizou-se pela: '); {Questão 5}
+                                                            writeln(' ');
+                                                            Writeln('(A) Implantação da indústria doméstica rural em substituição às oficinas. ');
+                                                            Writeln('(B) Realização da produção em grandes unidades fabris e intensa divisão do trabalho. ');
+                                                            Writeln('(C) Mecanização da produção agrícola e consequente fixação do homem à terra. ');
+                                                            Writeln('(D) Facilidade na compra de máquinas pelos artesãos que conseguiam financiamento para isso. ');
+                                                            Writeln ('  ');
+                                                            writeln('1. A');
+                                                            writeln('2. B');
+                                                            writeln('3. C');
+                                                            writeln('4. D');
+                                                            writeln('  ');
+                                                            Write('Digite a sua resposta: ');
+                                                            Readln (X);
+                                                            Writeln('  ');
+                                                            Case X Of
+                                                              1 : Writeln ('Errado');
+                                                              2 : Writeln ('Correto');
+                                                              3 : Writeln ('Errado');
+                                                              4 : Writeln ('Errado');
+                                                            End;
+                                                            
+                                                            writeln(' ');
+                                                            
+                                                            Write('Deseja continuar? ');
+                                                            read(s);
+                                                          Until ((s='S') or (s='s')); // fim do repeat
+                                                            writeln(' ');
+                                                            
+                                                            Repeat
+                                                              clrscr;
+                                                              Writeln('6) Para o processo de industrialização na Inglaterra do século XVIII, foi decisivo(a): '); {Questão 6}
+                                                              writeln(' ');
+                                                              Writeln('(A) A relação colonial, mantida com a Índia e a América do Norte, que possibilitou um grande acúmulo de recursos financeiros. ');
+                                                              Writeln('(B) O estímulo ao desenvolvimento inglês, promovido pela concorrência tecnológica com os americanos. ');
+                                                              Writeln('(C) A união dos interesses nacionais em torno de um esforço de desenvolvimento, logo após a expulsão das tropas napoleônicas do território inglês.');
+                                                              Writeln('(D) O incentivo à inovação tecnológica como resultado da ação dos ludistas que destruíram as máquinas consideradas obsoletas. ');
+                                                              writeln('  ');
+                                                              writeln('1. A');
+                                                              writeln('2. B');
+                                                              writeln('3. C');
+                                                              writeln('4. D');
+                                                              writeln('  ');
+                                                              Write('Digite a sua resposta: ');
+                                                              Readln (X);
+                                                              Writeln('  ');
+                                                              Case X Of
+                                                                1 : Writeln ('Correto');
+                                                                2 : Writeln ('Errado');
+                                                                3 : Writeln ('Errado');
+                                                                4 : Writeln ('Errado');
+                                                              End;
+                                                              
+                                                              writeln(' ');
+                                                              
+                                                              Write('Deseja continuar? ');
+                                                              read(s);
+                                                            Until ((s='S') or (s='s')); // fim do repeat
+                                                              writeln(' ');
+                                                              
+                                                              Repeat
+                                                                clrscr;
+                                                                Writeln('7) Dentre as realizações da Era Meiji (Era das Luzes), desencadeada pelo imperador Mitsu-Hito objetivando modernizar o Japão para competir em condições de igualdade com os países industrializados do Ocidente, destacamos: '); {Questão 7}
+                                                                writeln(' ');
+                                                                Writeln('(A) Fortalecimento do poder do Xogunato e abertura dos portos aos produtos estrangeiros, objetivando assimilar a tecnologia ocidental. ');
+                                                              Writeln('(B) Criação de Daimios independentes, coordenados por um Xogum imperial encarregado de estimular as atividades dos centros urbanos de produção industrial. ');
+                                                              Writeln('(C) Política de incentivos financeiros à burguesia nacional, formação de um bloco econômico supranacional regional (os Tigres Asiáticos), ampliando as relações entre Oriente e Ocidente. ');
+                                                              Writeln('(D) Abolição da servidão, proclamação da igualdade de todos os japoneses perante a lei, desenvolvimento do ensino público, das comunicações e da economia. ');
+                                                              writeln('  ');
+                                                              writeln('1. A');
+                                                              writeln('2. B');
+                                                              writeln('3. C');
+                                                              writeln('4. D');
+                                                              writeln('  ');
+                                                              Write('Digite a sua resposta: ');
+                                                              Readln (X);
+                                                              Writeln('  ');
+                                                              Case X Of
+                                                                1 : Writeln ('Errado');
+                                                                2 : Writeln ('Errado');
+                                                                3 : Writeln ('Errado');
+                                                                4 : Writeln ('Correto');
+                                                              End;
+                                                              
+                                                              writeln(' ');
+                                                              
+                                                              Write('Deseja continuar? ');
+                                                              read(s);
+                                                            Until ((s='S') or (s='s')); // fim do repeat
+                                                              writeln(' ');
+                                                              
+                                                              Repeat
+                                                                clrscr;
+                                                                Writeln('8) O século XIX foi um momento repleto de invenções em vários campos do saber. Dentre elas, podemos destacar: '); {Questão 8}
+                                                                writeln(' ');
+                                                                Writeln('(A) O rádio, o telefone e a televisão. ');
+                                                                Writeln('(B) A locomotiva, o automóvel e a vacina. ');
+                                                                Writeln('(C) A fotografia, o cinema e a eletricidade. ');
+                                                                Writeln('(D) O para-raios, a calculadora e o telégrafo. ');
+                                                                writeln('  ');
+                                                                writeln('1. A');
+                                                                writeln('2. B');
+                                                                writeln('3. C');
+                                                                writeln('4. D');
+                                                                writeln('  ');
+                                                                Write('Digite a sua resposta: ');
+                                                                Readln (X);
+                                                                Writeln('  ');
+                                                                Case X Of
+                                                                  1 : Writeln ('Errado');
+                                                                  2 : Writeln ('Errado');
+                                                                  3 : Writeln ('Correto');
+                                                                  4 : Writeln ('Errado');
+                                                                End;
+                                                                
+                                                                writeln(' ');
+                                                                
+                                                                Write('Deseja continuar? ');
+                                                                read(s);
+                                                              Until ((s='S') or (s='s')); // fim do repeat
+                                                                writeln(' ');
+                                                                
+                                                                Repeat
+                                                                  clrscr;
+                                                                  Writeln('9) Entre as características da Segunda Revolução Industrial podemos citar: '); {Questão 9}
+                                                                  writeln(' ');
+                                                                  Writeln('(A) Concentrou-se na indústria do aço, automobilística e utilização da eletricidade em larga escala. ');
+                                                                  Writeln('(B) Comparada à primeira etapa da Revolução Industrial é uma fase de menor importância, pois nada significativo foi criado. ');
+                                                                  Writeln('(C) Possibilitou a expansão dos capitais financeiros somente no continente europeu e nos Estados Unidos. ');
+                                                                  Writeln('(D) Revelou o potencial de países como a Alemanha e a França que se aliaram frente ao poderio britânico. ');
+                                                                  writeln('  ');
+                                                                  writeln('1. A');
+                                                                  writeln('2. B');
+                                                                  writeln('3. C');
+                                                                  writeln('4. D');
+                                                                  writeln('  ');
+                                                                  Write('Digite a sua resposta: ');
+                                                                  Readln (X);
+                                                                  Writeln('  ');
+                                                                  Case X Of
+                                                                    1 : Writeln ('Errado');
+                                                                    2 : Writeln ('Errado');
+                                                                    3 : Writeln ('Correto');
+                                                                    4 : Writeln ('Errado');
+                                                                  End;
+                                                                  
+                                                                  writeln(' ');
+                                                                  
+                                                                  Write('Deseja continuar? ');
+                                                                  read(s);
+                                                                Until ((s='S') or (s='s')); // fim do repeat
+                                                                  writeln(' ');
+                                                                  
+                                                                  Repeat
+                                                                    clrscr;
+                                                                  Writeln('10) A industrialização não foi um fenômeno isolado e atingiu todas as partes do globo. Neste contexto, o papel dos territórios que conseguiram sua independência política durante a Segunda Revolução Industrial foi: '); {Questão 10}
+                                                                  writeln(' ');
+                                                                  Writeln('(A) Tornaram-se fornecedores de matérias-primas agrícolas para aqueles que estavam industrializando-se. ');
+                                                                  Writeln('(B) Receberam grande parte dos capitais excedentes europeus. ');
+                                                                  Writeln('(C) Absorveram os camponeses que foram expulsos do campo como foi o caso de franceses, alemães e italianos. ');
+                                                                  Writeln('(D) Conseguiram atrair capitais e mão de obra qualificada que, por sua vez, possibilitaram o processo de industrialização. ');
+                                                                  writeln('  ');
+                                                                  writeln('1. A');
+                                                                  writeln('2. B');
+                                                                  writeln('3. C');
+                                                                  writeln('4. D');
+                                                                  writeln('  ');
+                                                                  Write('Digite a sua resposta: ');
+                                                                  Readln (X);
+                                                                  Writeln('  ');
+                                                                  Case X Of
+                                                                    1 : Writeln ('Correto');
+                                                                    2 : Writeln ('Errado');
+                                                                    3 : Writeln ('Errado');
+                                                                    4 : Writeln ('Errado');
+                                                                  End;
+                                                                  
+                                                                  Writeln('Materia finalizada. ');
+                                                                  Writeln('  ');
+                                                                  Writeln ('1 - Menu');
+                                                                  Writeln ('2 - Sair. ');
+                                                                  Writeln('  ');
+                                                                  Write ('Escolha: ');
+                                                                  Read (x);
+                                                                  If (x) = 1 then
+                                                                  Begin
+                                                                    goto Inicio;
+                                                                  End
+                                                                  Else
+                                                                  Begin
+                                                                    Exit;
+                                                                  End;
+                                                                  
+                                                                  
+                                                                Until ((s='S') or (s='s')); // fim do repeat
+                                                                End;
+                                                                
+                                                                Procedure Creditos;
+                                                                
+                                                                Begin
+                                                                  clrscr;
+                                                                  Writeln ('Código desenvolvido por José Soares, com a ajuda de Luiz Felipe® ');
+                                                                  Writeln ('Data de criação: 23 de junho de 2022');
+                                                                  writeln ('Data de término: 04 de agosto de 2022');
+                                                                  writeln ('  ');
+                                                                  writeln ('Digite [1] para sair. ');
+                                                                  writeln ('  ');
+                                                                  Write ('Digite o numero: ');
+                                                                  Read (x);
+                                                                  If (x) = 1 then
+                                                                  Begin
+                                                                    Exit;
+                                                                  End;
+                                                                End;
+                                                                
+                                                                
+                                                                Begin
+                                                                  textcolor( white );
+                                                                  
+                                                                  Writeln('##################');
+                                                                  Writeln('#                #');
+                                                                  Writeln('#      QUIZ      #');
+                                                                  Writeln('#                #');
+                                                                  Writeln('##################');
+                                                                  writeln('  ');
+                                                                  write('Digite seu nome: ');
+                                                                  read (Resposta);
+                                                                  write('Digite sua idade: ');
+                                                                  read (Resposta);
+                                                                  write('Digite a data: ');
+                                                                  read (Resposta);
+                                                                  writeln('  ');
+                                                                  writeln('Digite os numeros 1,2,3 ou 4 para obter a resposta! ');
+                                                                  writeln('  ');
+                                                                  Writeln('Selecione umas das materias! Digite [1],[2],[3],[4],[5] ou [6]. ');
+                                                                  Writeln('  ');
+                                                                  Writeln ('1 - Matematica. ');
+                                                                  Writeln ('2 - Fisica. ');
+                                                                  Writeln ('3 - Quimica. ');
+                                                                  Writeln ('4 - Portugues. ');
+                                                                  Writeln ('5 - Historia. ');
+                                                                  Writeln ('6 - Credito. ');
+                                                                  Writeln ('7 - Sair. ');
+                                                                  Writeln('  ');
+                                                                  Write ('Escolha a materia: ');
+                                                                  Read (x);
+                                                                  Case (x) of
+                                                                    1: Matematica;
+                                                                    2: Fisica;
+                                                                    3: Quimica;
+                                                                    4: Portugues;
+                                                                    5: Historia;
+                                                                    6: Creditos;
+                                                                    7: Exit;
+                                                                  End;
+                                                                  
+                                                                  textcolor( white );
+                                                                  
+                                                                  
+                                                                End.
